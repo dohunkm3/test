@@ -529,7 +529,7 @@ pyplot.show()
     - ***figsize*** : 2-tuple of floats, default: **rcParams["figure.figsize"] = [6.4, 4.8]**
         - Figure dimension (*width, height*) in inches.
 
-앞서 그려본 9개의 도표는 전체 도표의 평면 크기가 작기 때문에 x축의 값들이 모두 보이지 않는 문제가 있었다.이 문제를 해결하기 위해 $ 17 \times 20 $ 크기로 도표를 그리도록 크기를 설정해보자.
+앞서 그려본 9개의 도표는 전체 도표의 평면 크기가 작기 때문에 x축의 값들이 모두 보이지 않는 문제가 있었다.이 문제를 해결하기 위해 17 * 20 크기로 도표를 그리도록 크기를 설정해보자.
 
 이렇게 하기 위해서는 **figure(*figsize=(17, 20)*)**을 입력하면 된다.
 
@@ -691,7 +691,7 @@ pyplot.show()
 
 
 ```python
-# 먼저 y축의 값을 설정하고 0*터 7번까지의 막대 밑에 눈금으로 이름을 지었다.
+# 먼저 y축의 값을 설정하고 0부터 7번까지의 막대 밑에 눈금으로 이름을 지었다.
 number_of_tourists_total = [
     258522, 102241, 58600, 49998, 
     49282, 43190, 41739, 23760
@@ -995,7 +995,7 @@ pyplot.show()
 
 히스토그램은 도수분포표를 시각적으로 표현한 막대 그래프다. 즉, 특정 구간에 속하는 자료의 개수를 나타내는 빈도표(frequency table)인 도수분포표를 시각화한 도형으로 비교할 양이나 수치에 대한 구간별 빈도수를 막대 모양의 도형으로 나타낸 그래프다.
 
-히스토그램을 작성하려면 **hist()** 메소드를 주로 **hist(*x, bins=None, density=None, weights=None, cumulative=False, bottom=None, histtype='bar', orientation='vertical', rwidth=None, color=None, **kwargs*)** 형식으로 사용하면 된다.
+히스토그램을 작성하려면 **hist()** 메소드를 주로 **hist(*x, bins=None, density=None, weights=None, cumulative=False, histtype='bar', orientation='vertical', rwidth=None, color=None, **kwargs*)** 형식으로 사용하면 된다.
 - ***x***는 입력하는 데이터 값, 
 - ***bins***는 구간 수, 즉 도형에 들어갈 막대 개수, 
 - ***density***는 확률 밀도를 설정하기 위한 가중치 데이터 정규화, 
@@ -1014,7 +1014,7 @@ pyplot.show()
 - ***rwidth***는 막대의 상대적인 크기다. 단, ***histtype***이 'step'이나 'stepfilled'면 ***rwidth*** 값은 무시한다.
 - ***color***는 막대의 색깔을 지정한다. 지정하지 않으면 기본값이 적용된다.
 - ***facecolor***는 막대의 색깔을 통일하여 지정한다. ***facecolor***를 설정하면, 입력하는 데이터 값 ***x***가 다차원 리스트일 경우 ***color***로 일일이 지정하지 않고 전체 막대들의 색상을 한번에 설정할 수 있다.
-    - 히스토그램의 데이터가 한 개가 아니고 여러 개면 막대의 color를 선택할 때는 각 데이터마다 하나씩 색상을 설정해야 한다. 예를 들어, 1차원 리스터 3개를 리스트로 담고 있는 2차원 리스트의 데이터가 있다면 색상을 설정할 때 **color=['g', 'g', 'g']**와 같이 작성해야 한다. 만약 여러 개의 데이터를 하나의 색깔로 지정하려면 키워드 매개변수 중 ***facecolor***를 사용해서 색깔을 설정하면 여러 데이터로 그려지는 전체 막대들의 색상을 통일할 수 있다. 즉, 색상을 설정할 때 **facecolor='g'**로 하면 모든 막대의 색상을 초록색으로 통일할 수 있다. 이 ***facecolor*** 매개변수는 어떤 메소드의 변수로 사용되냐에 따라 막대, 축, 그래프의 배경 색상 등을 설정할 수 있다. 더 자세한 내용은 아래의 링크에서 확인할 수 있다.
+    - 히스토그램의 데이터가 한 개가 아니고 여러 개면 막대의 color를 선택할 때는 각 데이터마다 하나씩 색상을 설정해야 한다. 예를 들어, 1차원 리스트 3개를 리스트로 담고 있는 2차원 리스트의 데이터가 있다면 색상을 설정할 때 **color=['g', 'g', 'g']**와 같이 작성해야 한다. 만약 여러 개의 데이터를 하나의 색깔로 지정하려면 키워드 매개변수 중 ***facecolor***를 사용해서 색깔을 설정하면 여러 데이터로 그려지는 전체 막대들의 색상을 통일할 수 있다. 즉, 색상을 설정할 때 **facecolor='g'**로 하면 모든 막대의 색상을 초록색으로 통일할 수 있다. 이 ***facecolor*** 매개변수는 어떤 메소드의 변수로 사용되냐에 따라 막대, 축, 그래프의 배경 색상 등을 설정할 수 있다. 더 자세한 내용은 아래의 링크에서 확인할 수 있다.
     - https://matplotlib.org/api/_as_gen/matplotlib.patches.Patch.html#matplotlib.patches.Patch.set_facecolor
 - ***alpha***는 막대의 투명도를 설정한다. **0~1** 사이의 값을 가지며 **0**에 가까울수록 투명, **1**에 가까울수록 불투명한 막대가 생성된다.
 - 더 자세한 내용은 아래의 링크에서 확인할 수 있다.
@@ -1147,7 +1147,7 @@ pyplot.show()
 
 박스 그래프는 데이터의 분포를 시각적으로 표현한 박스 모양의 그래프다. 데이터의 범위, 중앙값과 이상치를 빠르게 확인할 수 있는 장점이 있다.
 
-박스 그래프를 작성하려면 **boxplot()** 메소드를 주로 **boxplot(*x, notch=None, sym=None, vert=None*)** 형식으로 사용하면 된다.
+박스 그래프를 작성하려면 **boxplot()** 메소드를 주로 **boxplot(*x, notch=None, sym=None, vert=None, labels=None*)** 형식으로 사용하면 된다.
 
 - ***x***는 입력하는 데이터 값이다.
 - ***notch***는 ***bool*** 자료형을 입력받으며 **True**면 잘록한 박스 그래프(notched box plot)를 그려 중앙값의 신뢰 구간을 표현한다.
@@ -1202,7 +1202,7 @@ male_weights = [
 # 위의 코드에서 notch=True로 설정하여 잘록한 박스 그래프(notched box plot)를 작성하고
 # sym='.'로 설정하여 이상치를 +로 표시한다.
 pyplot.boxplot(male_weights, notch=True, sym='.')
-pyplot.title('Outliers = "..')
+pyplot.title('Outliers = "."')
 pyplot.grid()
 pyplot.show()
 ```
