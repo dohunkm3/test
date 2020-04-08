@@ -21,7 +21,7 @@ Seoul National University
 
 **matplotlib**란?
 
-- 파이썬에서 데이터를 2-D 차트(chart)나 플롯(plot)을 그려주는 파이썬 라이브러리로 가장 많이 사용하는 데이타 시각화(Data Visualization) 툴이다.
+- 파이썬에서 데이터를 2-D 차트(chart)나 플롯(plot)으로 그려주는 파이썬 라이브러리로 가장 많이 사용하는 데이터 시각화(Data Visualization) 툴이다.
 - 선 그래프, 막대 그래프, 원 그래프, 히스토그램, 박스 그래프, 산점도 등을 포함한 다양한 차트와 플롯 스타일을 지원한다. 
 - [matplotlib.org](https://matplotlib.org)의 [갤러리 웹페이지](https://matplotlib.org/gallery/index.html)에서 다양한 샘플 도표를 볼 수 있다.
 
@@ -141,7 +141,7 @@ pyplot.show()
 x = numpy.arange(1, 10)
 y = x * 3
 
-# 'P': pentagon marker
+# 'P': plus (filled) marker
 pyplot.plot(x, y, 'P')
 pyplot.show()
 ```
@@ -166,7 +166,7 @@ pyplot.show()
 
 ## 제목과 라벨
 
-도표의 제목이나 X, Y 축 라벨을 붙이려면 **title**('제목'), **xlabel**('x축이름'), **ylabel**('축이름')을 사용한다.
+도표의 제목이나 X, Y 축 라벨을 붙이려면 **title**('제목'), **xlabel**('x축이름'), **ylabel**('y축이름')을 사용한다.
 
 
 ```python
@@ -258,7 +258,7 @@ pyplot.show()
 - Place a legend on the axes.
 - matplotlib.pyplot.**legend**(_\*args, \**kwargs_)
 
-도표에 여러 개의 선을 추가하려면 **plot**() 메소드를 **show()** 메소드 전에 여러 번 호출한다. 다음 예는 두 개의 선을 그린 후, 우측 상단에 범례를 표현한 것이다.
+도표에 여러 개의 선을 추가하려면 **plot**() 메소드를 **show()** 메소드 전에 여러 번 호출한다. 다음 예는 두 개의 선을 그린 후, 좌측 상단에 범례를 표현한 것이다.
 
 
 ```python
