@@ -76,7 +76,7 @@ pyplot.show()
 ```
 
 
-![png](output_11_0.png)
+![png](img/matplot01.png)
 
 
 
@@ -89,7 +89,7 @@ pyplot.show()
 ```
 
 
-![png](output_12_0.png)
+![png](img/matplot02.png)
 
 
 ## 선 색상 변경
@@ -110,7 +110,7 @@ pyplot.show()
 ```
 
 
-![png](output_15_0.png)
+![png](img/matplot03.png)
 
 
 ## 선 모양 변경
@@ -133,7 +133,7 @@ pyplot.show()
 ```
 
 
-![png](output_18_0.png)
+![png](img/matplot04.png)
 
 
 
@@ -147,7 +147,7 @@ pyplot.show()
 ```
 
 
-![png](output_19_0.png)
+![png](img/matplot05.png)
 
 
 
@@ -161,7 +161,7 @@ pyplot.show()
 ```
 
 
-![png](output_20_0.png)
+![png](img/matplot06.png)
 
 
 ## 제목과 라벨
@@ -181,7 +181,7 @@ pyplot.show()
 ```
 
 
-![png](output_23_0.png)
+![png](img/matplot07.png)
 
 
 ## 도표 구간의 확대 및 축소
@@ -202,7 +202,7 @@ pyplot.show()
 ```
 
 
-![png](output_27_0.png)
+![png](img/matplot08.png)
 
 
 
@@ -222,7 +222,7 @@ pyplot.show()
 ```
 
 
-![png](output_28_0.png)
+![png](img/matplot09.png)
 
 
 다음 예는 *x* 축을 1\~20, *y* 축을 3\~50으로 축소한 것이다.
@@ -244,7 +244,7 @@ pyplot.show()
 ```
 
 
-![png](output_30_0.png)
+![png](img/matplot10.png)
 
 
 ## 범례(legend)
@@ -278,7 +278,7 @@ pyplot.show()
 ```
 
 
-![png](output_34_0.png)
+![png](img/matplot11.png)
 
 
 앞의 예에서는 **plot**() 메소드의 ***label*** 매개변수에 선의 이름을 지정했는데, **legend**() 메소드에서도 선의 이름을 지정할 수 있다. 각 선에 대한 범례를 추가하려면 다음과 같이 각 선에 대한 범례를 순서대로 지정하여 **legend**(['선1범례', 선2범례', ...]) 메소드를 호출하면 된다.
@@ -301,7 +301,7 @@ pyplot.show()
 ```
 
 
-![png](output_36_0.png)
+![png](img/matplot12.png)
 
 
 ## 주석(annonation)
@@ -342,7 +342,7 @@ pyplot.show()
 ```
 
 
-![png](output_40_0.png)
+![png](img/matplot13.png)
 
 
 ## Lab: 상점 고객수 데이터로 선 그래프 그리기 
@@ -403,7 +403,7 @@ pyplot.show()
 ```
 
 
-![png](output_51_0.png)
+![png](img/matplot14.png)
 
 
 **subplot**() 안의 숫자를 변경하여 평면의 줄과 칸을 변경할 수 있다.
@@ -428,7 +428,7 @@ pyplot.show()
 ```
 
 
-![png](output_53_0.png)
+![png](img/matplot15.png)
 
 
 그런데 2줄 1칸의 평면에서 도표를 그릴 때 첫 번째 도표의 x축과 두 번째 도표의 제목이 앞서 예처럼 겹칠 수가 있다. 겹치기를 방지하려면 **subplots_adjust**() 메소드로 두 도표 사이의 간격을 설정하면 된다.
@@ -467,7 +467,7 @@ pyplot.show()
 ```
 
 
-![png](output_55_0.png)
+![png](img/matplot16.png)
 
 
 다음 예는 3줄 3칸의 평면을 만들어 9개의 도표를 그리는 코드다.
@@ -510,7 +510,7 @@ pyplot.show()
 ```
 
 
-![png](output_57_0.png)
+![png](img/matplot17.png)
 
 
 ## 도표 크기 조정
@@ -572,7 +572,7 @@ pyplot.show()
 ```
 
 
-![png](output_62_0.png)
+![png](img/matplot18.png)
 
 
 ## 서브플롯과 전체 도표의 제목 설정
@@ -612,7 +612,7 @@ pyplot.show()
 ```
 
 
-![png](output_65_0.png)
+![png](img/matplot19.png)
 
 
 # 다양한 도표 그리기
@@ -651,7 +651,7 @@ pyplot.show()
 ```
 
 
-![png](output_71_0.png)
+![png](img/matplot20.png)
 
 
 만약 x축의 눈금 라벨이 너무 긴 경우 **xticks()** 메소드의 매개변수 ***rotation***을 사용하여 글자를 회전시킬 수 있다.
@@ -678,7 +678,7 @@ pyplot.show()
 ```
 
 
-![png](output_73_0.png)
+![png](img/matplot21.png)
 
 
 모든 막대 당 하나의 눈금이 기본으로 붙는 게 아니기 때문에 많은 막대를 그릴 경우에는 자연스럽게 눈금이 생략될 수 있다. 이런 때는 **xticks()** 메소드를 사용하여 눈금의 위치와 이름을 설정하면 된다. 
@@ -708,7 +708,7 @@ pyplot.show()
 ```
 
 
-![png](output_76_0.png)
+![png](img/matplot22.png)
 
 
 한 화면에 여러 개의 도표를 그릴 때 사용하는 서브플롯에서는 **set_xticks()**와 **set_xtickslabels()** 메소드를 사용한다.
@@ -756,7 +756,7 @@ pyplot.show()
 ```
 
 
-![png](output_80_0.png)
+![png](img/matplot23.png)
 
 
 ### Lab: 상점 고객수 데이터로 막대 그래프 그리기 
@@ -838,7 +838,7 @@ pyplot.show()
 ```
 
 
-![png](output_91_0.png)
+![png](img/matplot24.png)
 
 
 **참고**  
@@ -896,7 +896,7 @@ pyplot.show()
 ```
 
 
-![png](output_96_0.png)
+![png](img/matplot25.png)
 
 
 ### 100% 누적 막대 그래프 그리기
@@ -936,7 +936,7 @@ pyplot.show()
 ```
 
 
-![png](output_100_0.png)
+![png](img/matplot26.png)
 
 
 ## 원 그래프
@@ -988,7 +988,7 @@ pyplot.show()
 ```
 
 
-![png](output_104_0.png)
+![png](img/matplot27.png)
 
 
 ## 히스토그램
@@ -1043,7 +1043,7 @@ pyplot.show()
 ```
 
 
-![png](output_108_0.png)
+![png](img/matplot28.png)
 
 
 앞과 같은 데이터로 다른 형태의 막대 히스토그램을 작성해보자.
@@ -1064,7 +1064,7 @@ pyplot.show()
 ```
 
 
-![png](output_110_0.png)
+![png](img/matplot29.png)
 
 
 다음 예는 중학교 1, 2, 3학년 학생 몸무게 데이터를 히스토그램으로 그리되 ***histtype***, ***orientation***, ***alpha***을 다르게 설정하여 다양한 모양의 히스토그램으로 작성한 코드다.
@@ -1140,7 +1140,7 @@ pyplot.show()
 ```
 
 
-![png](output_112_0.png)
+![png](img/matplot30.png)
 
 
 ## 박스 그래프
@@ -1186,7 +1186,7 @@ pyplot.show()
 ```
 
 
-![png](output_116_0.png)
+![png](img/matplot31.png)
 
 
 이번에는 이상치의 기본값을 다른 문자로 바꿔 표시하고 잘록한 박스 그래프를 만들어 본다.
@@ -1208,7 +1208,7 @@ pyplot.show()
 ```
 
 
-![png](output_118_0.png)
+![png](img/matplot32.png)
 
 
 도표에서 이상치를 생략하고 박스 그래프를 그려본다.
@@ -1230,7 +1230,7 @@ pyplot.show()
 ```
 
 
-![png](output_120_0.png)
+![png](img/matplot33.png)
 
 
 다음 예는 두 남자 그룹의 몸무게를 박스 그래프로 작성한 코드다.
@@ -1259,7 +1259,7 @@ pyplot.show()
 ```
 
 
-![png](output_122_0.png)
+![png](img/matplot34.png)
 
 
 ## 산점도
@@ -1304,7 +1304,7 @@ pyplot.show()
 ```
 
 
-![png](output_126_0.png)
+![png](img/matplot35.png)
 
 
 # Lab: 아파트 내 외국인 국적 및 연령 데이터 시각화
